@@ -1,27 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% exemple d'organisation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[10pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage[french]{babel}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{packages/packages}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fonctions et commandes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{commandes/commandes}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% article
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Grenouille}
+\date {14 décembre 2018}
+\author{Groupe Introduction à \LaTeX}
+
 
 
 \begin{document}
 % Let's have fun with github \o/
-\section{Cycle de croissance}
- 
-  Le cycle de croissance d'une grenouille peut se décomposer en neuf étapes :
-    \begin{enumerate}[label=\arabic*.]
-    \item Avant l'éclosion
-    \item Larves juste après l'éclosion s'accrochant à des algues
-    \item Avec des branchies extérieures
-    \item Les branchies extérieures sont recouvertes et sont absorbées
-    \item Larves sans membres d'environ un mois avec des branchies internes
-    \item Têtard avec jambes arrières, d'environ deux mois
-    \item Avec les jambes avant qui paraissent
-    \item Avec les quatre jambes libres
-    \item Une jeune grenouille d'environ trois mois, montrant une absorption presque totale de la queue ainsi que le changement de la gueule de têtard en celle de grenouille
-    
-    
-    \end{enumerate}
+
+
+
+
+	\maketitle
+
+	\tableofcontents
+
+	\include{Intro/Intro}
+
+	\include{Grenouilles_Culture/Grenouille_culture}
+
+	\include{Lifeofafrog/Lifeofafrog}
+	
+	\include{Voiraussi/Voirsaussi}
+
+	\include{Etymologie/Etymologie}
+
+	\include{Utilisation/utilisation}
+	
+	\include{Grenouilles_Culture/Grenouille_culture}
+
+	\include{laRepro/laRepro}
+	
+	\include{Fables/Fables}
+
+	\input{frog/pepe}
+
+	\include{Voiraussi/Voirsaussi}
+
+				
 \end{document}
+
