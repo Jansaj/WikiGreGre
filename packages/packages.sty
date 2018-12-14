@@ -1,6 +1,51 @@
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc} % Usage des caractères spéciaux
+\usepackage{fontenc}[T1]
+
+\usepackage[Lenny]{fncychap} % Des intro de chapitres plus jolies
+
+\usepackage{enumerate} % Options supplémentaires pour les énumérations.
+\usepackage[francais]{babel} % respect des normes françaises (table des matières etc...)
+\usepackage{amsmath, amsfonts} % Packages mathématiques
+\usepackage{graphicx} %insertion d'images dans LaTeX
+\usepackage{blindtext} % texte aléatoire pour remplir
+\blindmathtrue
+\usepackage{geometry} % Géometrie de la page
+\geometry{top    = 1.5cm, 
+          bottom = 2cm, 
+          left   = 3cm, 
+          right  = 1cm}
+\usepackage{verbatim}
+\usepackage{booktabs} % To thicken table lines
+\usepackage{array}
+\usepackage[round]{natbib}
+\usepackage{hyperref} % Liens hypertexte dans le document et index
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Les animaux aquatiques},   % subject of the document
+    pdfcreator={SISEO},   % creator of the document
+    pdfproducer={SISEO}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+\usepackage{fancyhdr} % En tête et pieds de pages
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Formation \LaTeX SISEO 2018}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[CE,CO]{\rightmark}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}

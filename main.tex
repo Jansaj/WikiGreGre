@@ -1,10 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% exemple d'organisation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[10pt,a4paper]{article}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{packages/packages}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fonctions et commandes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{commandes/commandes}
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% article
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Grenouille}
 \date {14 décembre 2018}
 \author{Groupe Introduction à \LaTeX}
@@ -17,11 +32,19 @@
 
 	\maketitle
 
+	\tableofcontents
+
+	\include{Intro/Intro}
+
 	\include{Grenouilles_Culture/Grenouille_culture}
+
+	\include{Lifeofafrog/Lifeofafrog}
 	
 	\include{Voiraussi/Voirsaussi}
 
-	\include{Etymologie/Etymologie}	
+	\include{Etymologie/Etymologie}
+
+	\include{Utilisation/utilisation}
 	
 	\include{Grenouilles_Culture/Grenouille_culture}
 
@@ -32,6 +55,8 @@
 	\include{Fables/Fables}
 
 	\include{frog/pepe the frog}
+
+	\include{Voiraussi/Voirsaussi}
 
 				
 \end{document}
